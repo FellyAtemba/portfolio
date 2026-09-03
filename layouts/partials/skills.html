@@ -1,0 +1,15 @@
+<div class="section-block" id="skills">
+  <h2 class="section-title"># Skills</h2>
+  <div class="skills-grid">
+    {{ range .Site.Data.skills }}
+    <div class="skill-group">
+      <h3 class="skill-group__title"><i class="{{ .icon }}"></i> {{ .title }}</h3>
+      <ul class="skill-group__list">
+        {{ range .items }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </div>
+</div>

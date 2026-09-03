@@ -1,0 +1,28 @@
+{{ $p := .Site.Params }}
+
+<div class="section-block" id="contact">
+  <h2 class="section-title"># Contact</h2>
+  <p class="contact-text">{{ $p.contactText }}</p>
+  <div class="contact-links">
+    <a href="mailto:{{ $p.email }}" class="contact-btn">
+      <i class="fa-solid fa-envelope"></i> Say Hello
+    </a>
+    <a href="{{ $p.linkedin }}" target="_blank" class="contact-btn contact-btn--secondary">
+      <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+    </a>
+  </div>
+  <div class="contact-info">
+    <div class="contact-info-item">
+      <i class="fa-solid fa-location-dot"></i>
+      <span>{{ $p.location }}</span>
+    </div>
+    <div class="contact-info-item">
+      <i class="fa-solid fa-envelope"></i>
+      <span>{{ $p.email }}</span>
+    </div>
+    <div class="contact-info-item">
+      <i class="fa-solid fa-phone"></i>
+      <span>{{ $p.phone }}</span>
+    </div>
+  </div>
+</div>

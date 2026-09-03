@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="section-block" id="blog">
+  <h2 class="section-title"># Blog</h2>
+  <p class="blog-description">{{ .Description }}</p>
+
+  {{ if .Pages }}
+  <div class="post-list">
+    {{ range .Pages.ByDate.Reverse }}
+    <a href="{{ .Permalink }}" class="post-item">
+      <div class="post-item__header">
+        <span class="post-item__title">{{ .Title }}</span>
+        <time class="post-item__date" datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "02 Jan 2006" }}
+        </time>
+      </div>
+      {{ with .Params.summary }}
+      <p class="post-item__summary">{{ . }}</p>
+      {{ end }}
+      {{ with .Params.tags }}
+      <div class="post-item__tags">
+        {{ range . }}
+          <span class="tag">{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+    </a>
+    {{ end }}
+  </div>
+  {{ else }}
+  <div class="empty-state">
+    <span class="prompt">~/annet/blog $</span> ls -la
+    <p>No posts yet. Check back soon.</p>
+  </div>
+  {{ end }}
+</div>
+{{ end }}

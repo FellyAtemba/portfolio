@@ -1,0 +1,58 @@
+baseURL = "https://annetatemba.dev/"
+languageCode = "en-us"
+title = "Annet Felly Atemba - SOC Analyst & AR Developer"
+disableKinds = ["taxonomy", "term"]
+
+[markup]
+  [markup.highlight]
+    style = "dracula"
+    lineNos = false
+    noClasses = true
+
+[params]
+  description = "Portfolio of Annet Felly Atemba - SOC Analyst, Detection Engineer, and AR Game Developer based in Nairobi, Kenya."
+  author = "Annet Felly Atemba"
+  greeting = "Hi, my name is"
+  name = "Annet Felly Atemba."
+  tagline = "Cybersecurity professional specializing in detection engineering, threat hunting, and incident response - with a creative edge in AR game development. Based in Nairobi, Kenya."
+  email = "annetatemba0@gmail.com"
+  phone = "+254 769 078 438"
+  location = "Nairobi, Kenya"
+  github = "https://github.com/FellyAtemba"
+  linkedin = "https://www.linkedin.com/in/annet-atemba-848164273/"
+  contactText = "I'm currently open to new opportunities in SOC analysis, detection engineering, and cybersecurity roles - both remote and onsite. Whether you have a question, a project idea, or just want to say hello, my inbox is always open."
+
+  # Typing effect phrases
+  typedPhrases = [
+    "build detection engines.",
+    "hunt threats.",
+    "engineer secure networks.",
+    "develop AR experiences.",
+    "investigate breaches.",
+  ]
+
+  # In-progress certs (MUST be before any [[params.xxx]] array tables)
+  inProgressCerts = ["CompTIA Security+", "Splunk Core", "CCNA", "AZ-900"]
+
+  # About section paragraphs (array-of-tables below this point)
+  [[params.about]]
+    text = "I'm a cybersecurity professional who graduated with a <strong>B.Sc. in Information Technology</strong> from Masinde Muliro University of Science and Technology and went on to join the <strong>Ubuntu Bridge Initiative (UBI)</strong> - an intensive detection &amp; response engineering program where I've built hunt engines, deception infrastructure, and conducted full-scale forensic investigations including the <strong>Sankofa Digital fintech breach</strong>."
+
+  [[params.about]]
+    text = "Outside of security, I build <strong>AR experiences</strong> using Unity and AR Foundation - and I'm always pushing to learn more."
+
+  # Certifications
+  [[params.certifications]]
+    badge = "AWS"
+    title = "AWS Certified Cloud Practitioner"
+    org = "Amazon Web Services · AWS re/Start Graduate"
+
+  [[params.certifications]]
+    badge = "CEH"
+    title = "Certified Ethical Hacker"
+    org = "EC-Council"
+
+  [[params.certifications]]
+    badge = "UBI"
+    title = "Cyber Core Associate"
+    org = "Ubuntu Bridge Initiative · SOC Analysis Cohort 1"

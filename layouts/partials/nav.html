@@ -1,0 +1,15 @@
+{{ $p := .Site.Params }}
+
+<header>
+  <a href="#" class="logo">&lt;AFA /&gt;</a>
+  <nav>
+    <ul>
+      <li><a href="#about">about</a></li>
+      <li><a href="{{ "blog/" | relURL }}">blog</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a href="{{ "assets/resume.pdf" | relURL }}" target="_blank">resume ↗</a></li>
+    </ul>
+  </nav>
+</header>

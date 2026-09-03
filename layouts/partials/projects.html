@@ -1,0 +1,29 @@
+<div class="section-block" id="projects">
+  <h2 class="section-title"># Projects</h2>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="security">Security</button>
+    <button class="filter-btn" data-filter="ar">AR / Game Dev</button>
+    <button class="filter-btn" data-filter="web">Web Dev</button>
+  </div>
+
+  <div class="project-list">
+    {{ range .Site.Data.projects }}
+    <div class="project-item" data-category="{{ .category }}">
+      <div class="project-item__header">
+        <span class="project-item__title"><i class="{{ .icon }}"></i> {{ .title }}</span>
+        <span class="project-item__links">
+          {{ if .github }}<a href="{{ .github }}" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>{{ end }}
+        </span>
+      </div>
+      <p class="project-item__desc">{{ .description }}</p>
+      <div class="project-item__tags">
+        {{ range .tags }}
+          <span class="tag">{{ . }}</span>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>

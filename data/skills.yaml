@@ -1,0 +1,79 @@
+- title: "Security & SIEM"
+  icon: "fa-solid fa-shield-halved"
+  items:
+    - "MITRE ATT&CK Framework"
+    - "Detection Rule Engineering"
+    - "SIEM Log Analysis & Triage"
+    - "Alert Automation & Tuning"
+    - "Threat Intelligence (STIX/Sigma)"
+    - "Honeypot Deployment"
+
+- title: "Network Defense"
+  icon: "fa-solid fa-network-wired"
+  items:
+    - "Suricata / Zeek IDS"
+    - "Linux nftables Firewalls"
+    - "containerlab"
+    - "Wireshark / PCAP Analysis"
+    - "VLAN Segmentation"
+    - "Anti-spoofing Policies"
+
+- title: "Incident Response"
+  icon: "fa-solid fa-user-secret"
+  items:
+    - "NIST SP 800-61r2 (PICERL)"
+    - "Digital Forensics & IR"
+    - "Auth-log Forensics"
+    - "Regulatory Reporting"
+    - "Root Cause Analysis"
+    - "Adversary Emulation"
+
+- title: "Cloud Security"
+  icon: "fa-solid fa-cloud"
+  items:
+    - "AWS GuardDuty"
+    - "CloudTrail & CloudWatch"
+    - "IAM Least-Privilege"
+    - "Infrastructure as Code"
+    - "Docker & Containers"
+    - "CI/CD (GitHub Actions)"
+
+- title: "Development"
+  icon: "fa-solid fa-code"
+  items:
+    - "Python"
+    - "TypeScript / JavaScript"
+    - "C# (Unity)"
+    - "Bash / Shell Scripting"
+    - "Next.js / NestJS"
+    - "PostgreSQL / Redis"
+
+- title: "AR & Game Dev"
+  icon: "fa-solid fa-gamepad"
+  items:
+    - "Unity 6 Engine"
+    - "AR Foundation"
+    - "Google ARCore"
+    - "Universal Render Pipeline"
+    - "TextMeshPro"
+    - "XR Simulation"
+
+- title: "GRC & Compliance"
+  icon: "fa-solid fa-gavel"
+  items:
+    - "ISO 27001"
+    - "NIST CSF"
+    - "NIST SP 800-61"
+    - "PCI-DSS"
+    - "Risk Register Management"
+    - "Board-level Reporting"
+
+- title: "Tools & Platforms"
+  icon: "fa-solid fa-wrench"
+  items:
+    - "Git & GitHub"
+    - "Linux (Ubuntu/Kali)"
+    - "Windows Server / AD"
+    - "Ansible"
+    - "DuckDB"
+    - "Prisma ORM"

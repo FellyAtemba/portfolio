@@ -1,0 +1,32 @@
+{{ $p := .Site.Params }}
+
+<div class="section-block" id="about">
+  <h2 class="section-title"># About</h2>
+  <div class="about-text">
+    {{ range $p.about }}
+      <p>{{ .text | safeHTML }}</p>
+    {{ end }}
+  </div>
+
+  <h3 class="section-title" style="font-size: 1rem; margin-top: 2rem;"># Certifications</h3>
+  <ul class="cert-list">
+    {{ range $p.certifications }}
+    <li>
+      <span class="cert-badge">{{ .badge }}</span>
+      <div class="cert-info">
+        <strong>{{ .title }}</strong>
+        <span>{{ .org }}</span>
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+
+  <div class="in-progress">
+    <span class="label">In Progress:</span>
+    <div class="tags">
+      {{ range $p.inprogresscerts }}
+        <span class="tag tag--dim">{{ . }}</span>
+      {{ end }}
+    </div>
+  </div>
+</div>

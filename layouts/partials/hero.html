@@ -1,0 +1,20 @@
+{{ $p := .Site.Params }}
+
+<div class="intro" id="hero">
+  <p class="subtitle">{{ $p.greeting }}</p>
+  <h1>{{ $p.name }}</h1>
+  <div class="typed-line">
+    <span class="prompt">~/annet $</span> I <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+  </div>
+  <p>{{ $p.tagline }}</p>
+  <div class="social-links">
+    <a href="{{ $p.github }}" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+    <a href="{{ $p.linkedin }}" target="_blank"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+    <a href="mailto:{{ $p.email }}"><i class="fa-solid fa-envelope"></i> Email</a>
+  </div>
+</div>
+
+<!-- Pass typed phrases to JS -->
+<script>
+  window.typedPhrases = [{{ range $i, $phrase := $p.typedPhrases }}{{ if $i }},{{ end }}"{{ $phrase }}"{{ end }}];
+</script>

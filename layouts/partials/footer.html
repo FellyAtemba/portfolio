@@ -1,0 +1,11 @@
+{{ $p := .Site.Params }}
+
+<footer>
+  <div class="footer-links">
+    <a href="{{ $p.github }}" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="{{ $p.linkedin }}" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="mailto:{{ $p.email }}" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+  </div>
+  <p>Designed & Built by {{ $p.author }}</p>
+  <p>&copy; {{ now.Year }} All rights reserved.</p>
+</footer>

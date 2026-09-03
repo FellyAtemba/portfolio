@@ -1,0 +1,55 @@
+- title: "Hunt Engine"
+  category: "security"
+  icon: "fa-solid fa-crosshairs"
+  github: "https://github.com/FellyAtemba"
+  description: "Advanced threat-hunting and correlation framework that normalizes multi-source telemetry into DuckDB, reconstructs multi-stage attack chains using campaign-graph correlation, and automates 5-dimensional change-management reconciliation to separate authorized maintenance from adversary behavior."
+  tags: ["Python", "DuckDB", "MITRE ATT&CK", "Campaign Graphs"]
+
+- title: "Detection Engineering Under Adversary Pressure"
+  category: "security"
+  icon: "fa-solid fa-shield-halved"
+  github: "https://github.com/FellyAtemba/Detection-engineering"
+  description: "A portable detection-as-code engine with automated regression testing - 12 semantic detection rules mapped to MITRE ATT&CK evaluated against a 250,000-event Windows security replay. Zero false positives, no VMs or Docker required."
+  tags: ["Python", "Pytest", "MITRE ATT&CK", "Sysmon"]
+
+- title: "Deception Sensor & Analysis Pipeline"
+  category: "security"
+  icon: "fa-solid fa-bug-slash"
+  github: "https://github.com/FellyAtemba/deception-Sensor-Analysis-Pipeline"
+  description: "Automated deception infrastructure combining an Ansible-deployed T-Pot honeypot with fail-closed boundary controls and a Python pipeline that normalizes 250K honeypot events into STIX 2.1 threat intelligence bundles and Sigma/Suricata detection rules."
+  tags: ["Python", "T-Pot", "Ansible", "STIX 2.1", "Sigma"]
+
+- title: "Network Detection Range as Code"
+  category: "security"
+  icon: "fa-solid fa-network-wired"
+  github: "https://github.com/FellyAtemba/Network-detection-range-as-code"
+  description: "A complete 7-zone routed enterprise network detection range deployed entirely as code - containerlab, FRRouting core, nftables stateful segmentation, mirrored Suricata IDS, and 40+ automated validation assertions."
+  tags: ["containerlab", "FRRouting", "Suricata", "nftables", "Docker"]
+
+- title: "AR Socket Safety Trainer"
+  category: "ar"
+  icon: "fa-solid fa-vr-cardboard"
+  github: "https://github.com/FellyAtemba/SocketLearningAR"
+  description: "Unity AR Foundation app that detects real electrical sockets via image tracking and overlays interactive 3D labels identifying Live, Neutral, and Earth pins with guided educational flows. Shipped as a working Android APK."
+  tags: ["Unity 6", "C#", "AR Foundation", "ARCore", "URP"]
+
+- title: "Kenya Retail POS SaaS"
+  category: "web"
+  icon: "fa-solid fa-cash-register"
+  github: "https://github.com/FellyAtemba"
+  description: "Full-stack multi-tenant Point of Sale platform for Kenyan businesses - featuring M-Pesa Daraja STK Push mobile payments, KRA eTIMS cryptographic receipt signing, RBAC access control, and atomic concurrency-safe inventory management."
+  tags: ["Next.js", "NestJS", "PostgreSQL", "M-Pesa", "Prisma"]
+
+- title: "Sankofa Digital - Fintech Breach Investigation"
+  category: "security"
+  icon: "fa-solid fa-magnifying-glass"
+  github: ""
+  description: "Full forensic investigation following NIST SP 800-61r2 PICERL lifecycle - SQL injection, SSRF cloud credential theft, and C2 beacon analysis. Traced the breach to an insider and delivered regulatory notification, board memo, and 30/60/90 remediation roadmap."
+  tags: ["NIST 800-61", "DFIR", "Cloud Forensics", "C2 Analysis"]
+
+- title: "AI Assistant Security Assessment"
+  category: "security"
+  icon: "fa-solid fa-robot"
+  github: ""
+  description: "Identified and exploited a critical prompt injection vulnerability in an AI-powered hiring assistant via CV context injection. Delivered a full technical report, executive summary, and remediation code across seven recommendation areas."
+  tags: ["Prompt Injection", "AI Security", "Red Team", "Reporting"]
